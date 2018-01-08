@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+    	http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd 
+        ">
+
+  	<!-- 注解的是使用 -->
+  	<!-- base-package基础包：表示所在包下的注解类，都能扫描到，被注解的类都会在容器初始化时被实例化 
+  		例如：maven包下的两个类都被@Component注解了，所以容器初始化时这两个类的无参构造都会被调用
+  	-->
+  	
+  	<context:component-scan base-package="com.qianfeng.maven"></context:component-scan>
+	
+
+</beans>
+
+
